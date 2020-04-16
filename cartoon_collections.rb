@@ -16,5 +16,5 @@ end
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
  
-  valid_calls.include? planeteer_calls
+  planeteer_calls.find {|n| n == valid_calls}
 end
